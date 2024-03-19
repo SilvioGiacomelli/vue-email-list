@@ -16,11 +16,12 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <title>Vue Email list</title>
 </head>
-<body>
-  
-<div
-id="app" 
-class="elenco-mail">
+<body> 
+<div id="app">
+ <div class="elenco-mail"
+ v-for="mail in mailArray">
+ {{mail}}
+</div>
 </div>
   <script src="script.js"></script>
 </body>
